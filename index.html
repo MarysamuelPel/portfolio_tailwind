@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mary | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    /* Custom styles for the sticky navbar */
+    .sticky-nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 999;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100">
+  <!-- Navbar Section -->
+  <nav class="bg-teal-700 text-white px-4 py-3 sticky-nav">
+    <div class="container mx-auto flex justify-between items-center">
+      <div>
+        <a href="#Home" class="text-xl font-bold cursor-pointer">Mary</a>
+      </div>
+      <ul class="md:flex space-x-4 hidden">
+        <li class="cursor-pointer hover:text-teal-200"><a href="#Home">Home</a></li>
+        <li class="cursor-pointer hover:text-teal-200"><a href="#Services">Services</a></li>
+        <li class="cursor-pointer hover:text-teal-200"><a href="#About">About</a></li>
+        <li class="cursor-pointer hover:text-teal-200"><a href="#Contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Header Section -->
+  <header class="bg-teal-600 text-white text-center py-20" id="Home">
+    <div class="container mx-auto">
+      <div class="flex flex-col items-center justify-center mb-6">
+        <img src="mary picture 2.jfif" alt="Mary" class="h-40 w-40 rounded-full object-cover border-4 border-white shadow-lg mb-4">
+        <h1 class="text-4xl font-bold">Hi, I'm Samuel Mary</h1>
+        <p class="mt-2 text-lg">Frontend Web Developer</p>
+      </div>
+      <!-- Social Media Icons -->
+      <div class="flex justify-center">
+        <a href="www.linkedin.com/in/mary-samuelpel" class="text-white mx-2 hover:text-teal-200" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com/Mary_Samuel_" class="text-white mx-2 hover:text-teal-200" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="" class="text-white mx-2 hover:text-teal-200" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </header>
+  
+
+  <!-- Services Section -->
+  <section class="bg-white py-10" id="Services">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-6">Services</h2>
+      <div class="flex flex-wrap justify-center">
+        <div class="bg-teal-100 p-6 rounded-lg max-w-xs mx-4 mb-8">
+          <h3 class="text-xl font-bold mb-2">Frontend Web Development</h3>
+          <p class="text-gray-800">I Specialize In Building Responsive And User-Friendly 
+            Websites Using Modern Frontend Technologies.</p>
+        </div>
+        <div class="bg-teal-100 p-6 rounded-lg max-w-xs mx-4 mb-8">
+          <h3 class="text-xl font-bold mb-2">Graphics Design</h3>
+          <p class="text-gray-800">I Create Visually Appealing Graphics For Websites, 
+            Social Media, And Marketing Materials.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section class="bg-teal-100 py-10" id="About">
+    <div class="container mx-auto flex justify-center">
+      <div class="flex items-center">
+        <img src="mary picture 2.jfif" alt="Mary" class="w-40 h-56 object-cover mr-6">
+        <div class="max-w-md">
+          <h2 class="text-3xl font-bold mb-6">About Me</h2>
+          <p class="mb-4">I am a Passionate Frontend Web Developer And Graphics Designer 
+            With a Keen Eye For Aesthetics And Usability. I Have Honed My Skills In 
+            Creating Stunning Websites And Graphics That Leave A Lasting Impression.</p>
+          <p class="mb-4">As a Frontend Developer, I Specialize In HTML, CSS, and 
+            JavaScript. I Enjoy Creating Interactive And Responsive User Interfaces That 
+            Elevate The Overall User Experience.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Me Section -->
+  <section class="bg-white py-10" id="Contact">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-6">Contact Me</h2>
+      <div class="max-w-2xl mx-auto">
+        <form class="grid grid-cols-1 gap-6">
+          <div>
+            <label for="name" class="block text-gray-800">Name</label>
+            <input type="text" id="name" name="name" class="w-full border rounded-md px-3
+             py-2 focus:outline-none focus:ring focus:border-teal-300"
+              required placeholder="enter your name here">
+          </div>
+          <div>
+            <label for="email" class="block text-gray-800">Email</label>
+            <input type="email" id="email" name="email" class="w-full border rounded-md 
+            px-3 py-2 focus:outline-none focus:ring focus:border-teal-300"
+             required placeholder="enter your email">
+          </div>
+          <div>
+            <label for="message" class="block text-gray-800">Message</label>
+            <textarea id="message" name="message" rows="4" class="w-full border rounded-md
+             px-3 py-2 focus:outline-none focus:ring focus:border-teal-300"
+              required placeholder="enter your message">
+            </textarea>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="bg-teal-600 text-white rounded-md px-4 py-2">
+              Send Message
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-teal-600 text-white text-center py-4">
+    <p>&copy; 2023 Samuel Mary. All Rights Reserved.</p>
+  </footer>
+</body>
+
+</html>
