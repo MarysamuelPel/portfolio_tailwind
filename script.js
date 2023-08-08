@@ -4,7 +4,7 @@
     const element = document.querySelector(target);
     if (element) {
       const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition - 100; // Adjust the offset as needed
+      const offsetPosition = elementPosition - 100;
 
       window.scrollBy({
         top: offsetPosition,
